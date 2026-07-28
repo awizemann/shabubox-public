@@ -3,13 +3,13 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.0.2</title>
-            <pubDate>Wed, 22 Jul 2026 10:25:22 -0400</pubDate>
-            <sparkle:version>102</sparkle:version>
-            <sparkle:shortVersionString>2.0.2</sparkle:shortVersionString>
+            <title>2.1.0</title>
+            <pubDate>Mon, 27 Jul 2026 22:42:51 -0400</pubDate>
+            <sparkle:version>103</sparkle:version>
+            <sparkle:shortVersionString>2.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.0.2/ShabuBox-2.0.2.zip" length="16794912" type="application/octet-stream" sparkle:edSignature="iV5MdNnWSZ3/ZSe9FrFxI9VeEegxuM/uIx1CwgeezbCbTaS2Dx1Tp+TdPrGCMLvRiQA09bdhLr7UiYw33xLECg=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.1.0/ShabuBox-2.1.0.zip" length="18387092" type="application/octet-stream" sparkle:edSignature="NHvCxxwSQSQNsqL4Zirvp9mPNmta4Fo6VHjmBJ7PQcL1wt+6kwDlzMhEcM8Tf23yvnFwqOBfRxwEY3O1DGkuDw=="/>
         </item>
     </channel>
 </rss>
