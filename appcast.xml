@@ -3,13 +3,61 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.3.0</title>
-            <pubDate>Mon, 03 Aug 2026 11:34:58 -0400</pubDate>
-            <sparkle:version>106</sparkle:version>
-            <sparkle:shortVersionString>2.3.0</sparkle:shortVersionString>
+            <title>2.4.0</title>
+            <pubDate>Wed, 26 Aug 2026 20:54:03 -0400</pubDate>
+            <sparkle:version>107</sparkle:version>
+            <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.3.0/ShabuBox-2.3.0.zip" length="18886487" type="application/octet-stream" sparkle:edSignature="an2CvpismK0/mtm4Kkl6GzLfOqSusEfLtbXNEZtX2YJGa5nW03gNxEe9Q4mZEgeHzwITuFiZvFmecZzjFcZGCQ=="/>
+            <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.4.0</h2>
+<p style="margin:6px 0;">A big release about getting out of your way. The scanner starts itself, recovers itself when it jams, and hands you straighter, smaller, truer-coloured pages; the library gains a split view, plain-language search that explains itself, and optional iCloud sync.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Scanning</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Hands-off scanning</strong> — turn on <em>Watch scanner (hands-off scanning)</em> in Settings → Scanner and ShabuBox watches the device itself: pressing the scanner's own Scan button, or simply dropping paper in the feeder, starts a scan. No trip to the app first.</li>
+<li style="margin:3px 0;"><strong>Right way up, more often</strong> — auto-rotation now decides from the direction the text runs first and the top/bottom of that axis second, instead of guessing from a single reading. Pages with very little text on them — a mostly-blank cover sheet, a short receipt — are recovered rather than left upside down.</li>
+<li style="margin:3px 0;"><strong>Cleaner paper edges</strong> — sheet-fed scans left a thin tapered shadow along the edge where the page met the feeder. The paper edge is now found along its whole length, so that sliver is trimmed away instead of baked into the file.</li>
+<li style="margin:3px 0;"><strong>True colour, kept</strong> — how a page was captured now travels with the scan, so reprocessing a colour scan can't flatten it to grey. Grey and black-and-white scans are stored as a single channel, which renders correctly and takes far less space. Rescanning a page that is byte-for-byte identical to one you already have no longer creates a duplicate.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Scanner recovery</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Reset Scanner</strong> — after a paper jam or a wedged device, the error banner offers <em>Reset Scanner</em>, which closes and reopens the scanner's handle for you and confirms the device actually came back before letting you retry.</li>
+<li style="margin:3px 0;"><strong>ScanSnap conflicts, diagnosed</strong> — when ScanSnap Home or a Wi-Fi connection is holding the scanner, ShabuBox says so specifically and offers the fix, including quitting the conflicting app for you.</li>
+<li style="margin:3px 0;"><strong>Save Diagnostic Bundle</strong> — both scanner banners offer <em>Save Diagnostic Bundle…</em>, which collects a local report about the scanner and the failure so you can look at it or send it on. It is written to disk and goes nowhere on its own.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Files &amp; curation</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Split view</strong> — the Files browser gains a <em>Split (list with preview)</em> mode: your list on the left, a live full-height preview alongside. Arrow keys walk the list and the preview follows. Set the browser's opening mode under Settings → General.</li>
+<li style="margin:3px 0;"><strong>Reduce Resolution</strong> — <em>Reduce Resolution…</em> shrinks a scanned PDF or image in place, showing the real before-and-after size. It only ever goes down, never up, and it works on a whole selection at once with live progress and a working Cancel.</li>
+<li style="margin:3px 0;"><strong>Finder tags come with the file</strong> — tags you set in Finder are imported whenever a file enters the library, on every route in, and join your existing tags in one alphabetized list.</li>
+<li style="margin:3px 0;"><strong>Better renaming</strong> — renames preserve compound extensions instead of inventing one, case-only renames are treated as real renames, and refiling never records a move that didn't happen.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Finding</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Find Anything understands the question</strong> — ⌘K now reads plain-language queries (dates, kinds, "invoices from March") as filters rather than as literal text, and tells you <em>why</em> each file matched.</li>
+<li style="margin:3px 0;"><strong>See All Results and a Searches sidebar</strong> — the ⌘K palette shows the best few; <em>See All Results…</em> opens the full answer in the real file browser and parks the question in a persistent Searches section you can come back to. A still-indexing library says so instead of answering "No results".</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">iCloud, privacy &amp; speed</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Optional iCloud sync</strong> — <em>Sync with iCloud</em> in Settings → General copies your library to iCloud Drive so it follows you across Macs. It is off by default, reversible while the switch is still pending, and every state — not set up, couldn't write, needs a relaunch — is spelled out plainly instead of failing silently.</li>
+<li style="margin:3px 0;"><strong>Anonymous usage statistics you can turn off</strong> — <em>Share anonymous usage statistics</em> under Settings → General → Privacy sends counts of which features get used, and nothing else: never your documents, names, paths, notes, or search text. Turning it off stops collection immediately and discards anything not yet sent.</li>
+<li style="margin:3px 0;"><strong>Faster on big libraries</strong> — scanned pages now stream into the PDF as they arrive instead of piling up in memory, and the scan pipeline runs off the main thread so the app stays responsive while it works.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;">Collections could be emptied by an index rebuild, and a deleted collection could reappear; both are closed.</li>
+<li style="margin:3px 0;">A rename could strand a note or leave a phantom behind; note and file identity now survive renames and content replacement.</li>
+<li style="margin:3px 0;"><em>Remove from Collection</em> acted on the wrong context in some panes.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;">Hands-off scanning and iCloud sync are both off by default — turn them on in Settings → Scanner and Settings → General. Split view is available in the Files browser at any time; the browser still opens in grid view unless you change <em>Default view</em>.</li>
+<li style="margin:3px 0;">The rotation and edge-cleanup improvements apply to future scans; older scans can be updated with right-click → <em>Reprocess scan</em>. Reducing resolution is permanent — the library file is the only copy, so it asks first.</li>
+<li style="margin:3px 0;">The test suite grew to over 2,200 tests, including new suites for scanner recovery, resolution reduction, and query understanding.</li>
+</ul>
+</div>
+]]></description>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.4.0/ShabuBox-2.4.0.zip" length="19690583" type="application/octet-stream" sparkle:edSignature="SVh4eXLJXnbcegsjwsz+KocedzmV90/mVNyLq8M60jRKmKNPwgEKoXQvwgGEr8zyts6y++1JO7YdQRPealWKDA=="/>
         </item>
     </channel>
 </rss>
