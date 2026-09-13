@@ -3,61 +3,87 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.4.0</title>
-            <pubDate>Wed, 26 Aug 2026 20:54:03 -0400</pubDate>
-            <sparkle:version>107</sparkle:version>
-            <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
+            <title>2.5.0</title>
+            <pubDate>Sun, 13 Sep 2026 12:09:29 -0400</pubDate>
+            <sparkle:version>108</sparkle:version>
+            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
-<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.4.0</h2>
-<p style="margin:6px 0;">A big release about getting out of your way. The scanner starts itself, recovers itself when it jams, and hands you straighter, smaller, truer-coloured pages; the library gains a split view, plain-language search that explains itself, and optional iCloud sync.</p>
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.5.0</h2>
+<p style="margin:6px 0;">A release about trust. ShabuBox reads your documents again, better, and tells you the truth about it while it works; answers about money come from the right line of the right document; one Files browser now serves the Inbox, Searches, Addresses and Entities alike; the scanner explains itself before it fails; and your library is guarded against the ways two Macs, iCloud, and old builds could quietly damage it.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Reading your documents again</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>Better table reading, and a one-time re-read to get there</strong> — ShabuBox now rebuilds the rows of printed tables from the layout of the page itself, so a bill's `ENDING BALANCE` stays attached to its own figure instead of drifting away from it. Getting that right on documents already in your library means reading their pages again from scratch, so the first launch after upgrading starts a <strong>background re-read of your library</strong>.</li>
+</ul>
+<p style="margin:6px 0;">  What to expect:</p>
+<p style="margin:6px 0;">  - It runs in the background. <strong>The app stays usable throughout</strong> — you can search, scan, file and ask questions while it works.</p>
+<p style="margin:6px 0;">  - <strong>Typically overnight for a large library.</strong> Smaller libraries finish much sooner. It paces itself against your Mac's temperature and gets out of the way of what you are doing, so it is deliberately unhurried.</p>
+<p style="margin:6px 0;">  - <strong>It resumes automatically.</strong> Quit whenever you like. The next launch picks up exactly where it left off — nothing is redone and nothing is lost.</p>
+<p style="margin:6px 0;">  - <strong>Results improve as it completes.</strong> Documents are better as they are re-read, not only at the end, so answers and search results sharpen gradually while the pass runs.</p>
+<p style="margin:6px 0;">  - <strong>Every reading improvement in this release arrives in the same pass.</strong> Table rebuilding was the first of several — ShabuBox also picks the sharper of two readings of a page when the first one comes back thin, and it protects the text it already has. You do not get a re-read per improvement: your library is read again <strong>once</strong>, by the finished reader, however many refinements went into it.</p>
+<p style="margin:6px 0;">  - <strong>A fresh install re-reads once too</strong>, as documents are brought in. There is one re-read, not one per update — the pass is driven by which version last read a document, so a library that has been through earlier builds is brought up to date in a single pass.</p>
+<p style="margin:6px 0;">  - <strong>A re-read only replaces what it improves.</strong> If reading a page again does not produce a better result than what is already stored, ShabuBox keeps the text it has.</p>
+<p style="margin:6px 0;">  - <strong>Documents that aren't downloaded to this Mac wait their turn.</strong> If iCloud has moved a document's contents off your Mac to save space, ShabuBox asks for it back and re-reads it automatically once the contents are here — nothing is skipped and nothing is marked as failed. The sidebar counts those documents separately, as waiting for iCloud.</p>
+<p style="margin:6px 0;">  - <strong>A document that can't be opened is not written off as blank.</strong> A file that fails to open during the pass stays pending and is tried again later, instead of being stored as an empty page.</p>
+<p style="margin:6px 0;">  The sidebar shows "Re-reading documents…" while it is running, with a count, a percentage and an estimate, and VoiceOver reads that progress as a sentence.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Better answers about money</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>The right figure from the right line</strong> — several fixes make ShabuBox's answers about amounts more reliable: statements that print a total alongside its adjustments no longer contribute the wrong column; when a question is about an amount, the passage that actually carries the figure now makes it into consideration instead of being crowded out by the rest of the document; and near-identical documents (the same bill from different months) are told apart by their dates even when the filename writes the date without leading zeros.</li>
+<li style="margin:3px 0;"><strong>A single-value form field is answered, not summed</strong> — asked for one box on a form, ShabuBox no longer adds up every figure on the page to get there.</li>
+<li style="margin:3px 0;"><strong>The same question now gets the same answer</strong> — asking an identical question twice, or after a relaunch, previously could surface a different supporting passage when two passages scored an exact tie. Ties now resolve the same way every time, in answers and in automatic filing alike.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">One Files browser, everywhere</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>The Inbox is now a view of the Files browser</strong> — the Inbox uses the same rows, the same selection, the same bulk bar and the same row menu as Files, so everything you can do to a filed document you can now do to an inbox document: rename, tag, refile, trash, <em>Generate titles</em>, <em>Reduce Resolution…</em>. Filters that make no sense before a document is filed — document type, Favorites, typed tables — stay out of the way in the Inbox.</li>
+<li style="margin:3px 0;"><strong>Searches, Addresses, Entities and the Map open the real browser</strong> — a saved search, an address, a person or company, and a pin on the map all now show their documents in the full Files browser with its sorting, filtering, split view and bulk actions, instead of a reduced list. Every scope has an honest empty state: "No documents at this address" rather than a blank pane.</li>
+<li style="margin:3px 0;"><strong>Select all N</strong> — when a page of results is selected, one click escalates the selection to the whole filtered set, however many pages it spans.</li>
+<li style="margin:3px 0;"><strong>Split view has a cursor</strong> — in <em>Split (list with preview)</em> mode a click moves the preview cursor without disturbing your selection, and the cursor row looks like a cursor rather than a second selection.</li>
+<li style="margin:3px 0;"><strong>Under the hood</strong> — long lists render faster: rows no longer redraw when an unrelated row is selected, the bulk bar overlays the list instead of shifting it, the filter bar's counts are memoized, and a bulk action that loses its dialog is cancelled rather than left armed.</li>
+</ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Scanning</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Hands-off scanning</strong> — turn on <em>Watch scanner (hands-off scanning)</em> in Settings → Scanner and ShabuBox watches the device itself: pressing the scanner's own Scan button, or simply dropping paper in the feeder, starts a scan. No trip to the app first.</li>
-<li style="margin:3px 0;"><strong>Right way up, more often</strong> — auto-rotation now decides from the direction the text runs first and the top/bottom of that axis second, instead of guessing from a single reading. Pages with very little text on them — a mostly-blank cover sheet, a short receipt — are recovered rather than left upside down.</li>
-<li style="margin:3px 0;"><strong>Cleaner paper edges</strong> — sheet-fed scans left a thin tapered shadow along the edge where the page met the feeder. The paper edge is now found along its whole length, so that sliver is trimmed away instead of baked into the file.</li>
-<li style="margin:3px 0;"><strong>True colour, kept</strong> — how a page was captured now travels with the scan, so reprocessing a colour scan can't flatten it to grey. Grey and black-and-white scans are stored as a single channel, which renders correctly and takes far less space. Rescanning a page that is byte-for-byte identical to one you already have no longer creates a duplicate.</li>
+<li style="margin:3px 0;"><strong>Pick your scanner</strong> — Settings → Scanner lists every scanner ShabuBox can see, marks which are supported, remembers your choice, and names it in the Inbox's Scan menu. When a ScanSnap is plugged in over USB, ShabuBox no longer wanders off to a network scanner on its own.</li>
+<li style="margin:3px 0;"><strong>ScanSnap iX2500</strong> joins the supported list over USB.</li>
+<li style="margin:3px 0;"><strong>Diagnosed before the timeout</strong> — a scanner that is busy, held by ScanSnap Home, unresponsive because its Wi-Fi is on, or blocked by macOS is now named as such immediately, with the fix, instead of a two-minute wait that ends in a generic error. The diagnostic report gains a view of the USB bus so a support conversation starts with facts.</li>
+<li style="margin:3px 0;"><strong>Scan menu explains itself</strong> — when no scanner is chosen automatically, the menu says why rather than doing nothing.</li>
 </ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Scanner recovery</h3>
+<h3 style="font-size:13px; margin:14px 0 4px;">Two Macs, one library</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Reset Scanner</strong> — after a paper jam or a wedged device, the error banner offers <em>Reset Scanner</em>, which closes and reopens the scanner's handle for you and confirms the device actually came back before letting you retry.</li>
-<li style="margin:3px 0;"><strong>ScanSnap conflicts, diagnosed</strong> — when ScanSnap Home or a Wi-Fi connection is holding the scanner, ShabuBox says so specifically and offers the fix, including quitting the conflicting app for you.</li>
-<li style="margin:3px 0;"><strong>Save Diagnostic Bundle</strong> — both scanner banners offer <em>Save Diagnostic Bundle…</em>, which collects a local report about the scanner and the failure so you can look at it or send it on. It is written to disk and goes nowhere on its own.</li>
+<li style="margin:3px 0;"><strong>Curation edits merge instead of overwriting</strong> — stars, notes, tags, custom fields and collections edited on two Macs sharing an iCloud library used to erase each other in turn. Each edit is now stamped per field, and a merge can no longer delete a change the other Mac made. This works from the moment both Macs are on 2.5.0.</li>
+<li style="margin:3px 0;"><strong>iCloud conflict copies are parked, not filed</strong> — when iCloud produces a "conflicted copy" of a document, ShabuBox sets it aside in the Trash surfaces, named as a conflict copy, instead of indexing it as a second document.</li>
+<li style="margin:3px 0;"><strong>Share this Mac's search index</strong> — a new switch under Settings → General publishes this Mac's search index into the library for your other devices. It is off by default because it uses your iCloud space; the pane shows how much each Mac's index takes and lets you remove one.</li>
+<li style="margin:3px 0;"><strong>Apply curation from your other devices (experimental)</strong> — an opt-in switch in Settings → General under <em>Curation Sync</em> that lets this Mac take stars, notes, tags, hand-set types and collection membership set on another device — including ones that device cleared. Off by default while it is being tested; with it off, this Mac still shares its own edits, it just doesn't take any back. Turn it on only when every device sharing the library is on 2.5.0.</li>
 </ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Files &amp; curation</h3>
+<h3 style="font-size:13px; margin:14px 0 4px;">Protecting the library</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Split view</strong> — the Files browser gains a <em>Split (list with preview)</em> mode: your list on the left, a live full-height preview alongside. Arrow keys walk the list and the preview follows. Set the browser's opening mode under Settings → General.</li>
-<li style="margin:3px 0;"><strong>Reduce Resolution</strong> — <em>Reduce Resolution…</em> shrinks a scanned PDF or image in place, showing the real before-and-after size. It only ever goes down, never up, and it works on a whole selection at once with live progress and a working Cancel.</li>
-<li style="margin:3px 0;"><strong>Finder tags come with the file</strong> — tags you set in Finder are imported whenever a file enters the library, on every route in, and join your existing tags in one alphabetized list.</li>
-<li style="margin:3px 0;"><strong>Better renaming</strong> — renames preserve compound extensions instead of inventing one, case-only renames are treated as real renames, and refiling never records a move that didn't happen.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Finding</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Find Anything understands the question</strong> — ⌘K now reads plain-language queries (dates, kinds, "invoices from March") as filters rather than as literal text, and tells you <em>why</em> each file matched.</li>
-<li style="margin:3px 0;"><strong>See All Results and a Searches sidebar</strong> — the ⌘K palette shows the best few; <em>See All Results…</em> opens the full answer in the real file browser and parks the question in a persistent Searches section you can come back to. A still-indexing library says so instead of answering "No results".</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">iCloud, privacy &amp; speed</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Optional iCloud sync</strong> — <em>Sync with iCloud</em> in Settings → General copies your library to iCloud Drive so it follows you across Macs. It is off by default, reversible while the switch is still pending, and every state — not set up, couldn't write, needs a relaunch — is spelled out plainly instead of failing silently.</li>
-<li style="margin:3px 0;"><strong>Anonymous usage statistics you can turn off</strong> — <em>Share anonymous usage statistics</em> under Settings → General → Privacy sends counts of which features get used, and nothing else: never your documents, names, paths, notes, or search text. Turning it off stops collection immediately and discards anything not yet sent.</li>
-<li style="margin:3px 0;"><strong>Faster on big libraries</strong> — scanned pages now stream into the PDF as they arrive instead of piling up in memory, and the scan pipeline runs off the main thread so the app stays responsive while it works.</li>
+<li style="margin:3px 0;"><strong>An older ShabuBox can't damage a newer library</strong> — the app now refuses to open a library last used by a newer version, and says so, instead of silently rebuilding its index without the newer columns.</li>
+<li style="margin:3px 0;"><strong>A full disk is not a corrupt library</strong> — ShabuBox now tells the two apart at launch, refuses to touch the library when the disk is full, and says which it was.</li>
+<li style="margin:3px 0;"><strong>Repair Library shows what it set aside</strong> — old index backups that a repair moved aside are listed with their size, so you can reclaim the space.</li>
+<li style="margin:3px 0;"><strong>A wholesale disappearance stops the rescan</strong> — if the library's folder vanishes (an unmounted disk, an iCloud sign-out), a rescan stops and asks rather than treating every document as deleted.</li>
+<li style="margin:3px 0;"><strong>Fewer things in the log</strong> — file names and document contents no longer appear in the system log in the clear.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">Collections could be emptied by an index rebuild, and a deleted collection could reappear; both are closed.</li>
-<li style="margin:3px 0;">A rename could strand a note or leave a phantom behind; note and file identity now survive renames and content replacement.</li>
-<li style="margin:3px 0;"><em>Remove from Collection</em> acted on the wrong context in some panes.</li>
+<li style="margin:3px 0;">A membership reload during an in-flight load was dropped, so a collection could show stale contents until the next click.</li>
+<li style="margin:3px 0;">The Favorites filter and document-type facets appeared in the Inbox where they could not apply.</li>
+<li style="margin:3px 0;">A trashed document could still be dragged; refiling into the Trash is refused.</li>
+<li style="margin:3px 0;">Removing another Mac's shared index in Settings says so when it is refused, instead of doing nothing.</li>
+<li style="margin:3px 0;">Dismissing a failed download row forgets the failure, and a failed import says it failed.</li>
+<li style="margin:3px 0;">A note's backlinks scan and the thumbnail backfill now wait for a document's bytes to be on this Mac.</li>
+<li style="margin:3px 0;">Dragging a file that iCloud has not downloaded yet fetches it first, then imports it.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">Hands-off scanning and iCloud sync are both off by default — turn them on in Settings → Scanner and Settings → General. Split view is available in the Files browser at any time; the browser still opens in grid view unless you change <em>Default view</em>.</li>
-<li style="margin:3px 0;">The rotation and edge-cleanup improvements apply to future scans; older scans can be updated with right-click → <em>Reprocess scan</em>. Reducing resolution is permanent — the library file is the only copy, so it asks first.</li>
-<li style="margin:3px 0;">The test suite grew to over 2,200 tests, including new suites for scanner recovery, resolution reduction, and query understanding.</li>
+<li style="margin:3px 0;">The background re-read starts on first launch and needs no action. Leave the Mac awake and plugged in overnight for a large library; it resumes wherever it stopped.</li>
+<li style="margin:3px 0;">Do not go back to 2.4.0 on a library that 2.5.0 has opened; 2.4.0 would rebuild the index without the re-read's bookkeeping and the pass would start over on the next 2.5.0 launch.</li>
+<li style="margin:3px 0;">ShabuBox now checks for updates in the background and shows what changed before installing; <em>Check for Updates…</em> still works whenever you like.</li>
+<li style="margin:3px 0;"><em>Share this Mac's search index</em> and <em>Apply curation from your other devices</em> are both off by default. Semantic search remains experimental.</li>
+<li style="margin:3px 0;">The test suite grew to over 3,600 tests, including new suites for the re-read pass, two-Mac curation merging, iCloud conflict copies, scanner diagnosis, and the store guards.</li>
 </ul>
 </div>
 ]]></description>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.4.0/ShabuBox-2.4.0.zip" length="19690583" type="application/octet-stream" sparkle:edSignature="SVh4eXLJXnbcegsjwsz+KocedzmV90/mVNyLq8M60jRKmKNPwgEKoXQvwgGEr8zyts6y++1JO7YdQRPealWKDA=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.5.0/ShabuBox-2.5.0.zip" length="20166586" type="application/octet-stream" sparkle:edSignature="8O/VGsXfKKp0l0zrbbBs1qayZ99V6N11PhDordyQrHYBs225LjCydifSGgc/4IkOfps086Fi570hyyox00tVAQ=="/>
         </item>
     </channel>
 </rss>
