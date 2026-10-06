@@ -3,75 +3,34 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.6.0</title>
-            <pubDate>Tue, 29 Sep 2026 15:25:52 -0400</pubDate>
-            <sparkle:version>109</sparkle:version>
-            <sparkle:shortVersionString>2.6.0</sparkle:shortVersionString>
+            <title>2.6.1</title>
+            <pubDate>Tue, 06 Oct 2026 11:52:04 -0400</pubDate>
+            <sparkle:version>110</sparkle:version>
+            <sparkle:shortVersionString>2.6.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
-<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.6.0</h2>
-<p style="margin:6px 0;">A release about reading each page properly and keeping what it finds. ShabuBox now keeps a record of each page's layout as it reads, uses it to type, name and cite your documents more accurately, and brings your existing library up to date with a second one-time background re-read. Filed documents can now be moved to the Trash and restored to where they were; a folder you drop in keeps its folders; the search field moves to the header; and the scanner, iCloud relaunch and Reminders each lose a way to get stuck.</p>
-<h3 style="font-size:13px; margin:14px 0 4px;">Reading your documents again</h3>
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.6.1</h2>
+<p style="margin:6px 0;">A small update about the anonymous usage statistics ShabuBox can send — what they include, when they're sent, and how accurately they count — plus one fix to the library's safety check. Your documents, file names and anything you type are still never sent.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Usage statistics</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>An improved reader, and one more background re-read</strong> — ShabuBox now stores a per-page record of what it read: where each line, table and labelled field sits on the page. Documents already in your library don't have that yet, so the first launch after updating starts a <strong>one-time background re-read of your library</strong> by the new reader. 2.5.0 promised one re-read for the improvements in that release, and it kept that promise; this is a second pass, for a better reader, and it too happens only once.</li>
-</ul>
-<p style="margin:6px 0;">  What to expect:</p>
-<p style="margin:6px 0;">  - It runs in the background. <strong>The app stays usable throughout</strong> — search, scan, file and ask questions while it works.</p>
-<p style="margin:6px 0;">  - <strong>It can take many hours on a large library — overnight, or longer.</strong> Smaller libraries finish much sooner. It paces itself against your Mac's temperature and gets out of your way.</p>
-<p style="margin:6px 0;">  - <strong>It resumes automatically.</strong> Quit whenever you like; the next launch picks up where it left off.</p>
-<p style="margin:6px 0;">  - <strong>A re-read only replaces what it improves.</strong> When reading a page again gives no better result, ShabuBox keeps the text it already has — and an equally good reading is never allowed to change a figure.</p>
-<p style="margin:6px 0;">  - <strong>Text that was cut short is repaired.</strong> Some PDFs made on a computer (rather than scanned) contain a character that caused ShabuBox to store only the first part of their text. New imports are no longer cut, and the re-read restores the missing text for documents already affected.</p>
-<p style="margin:6px 0;">  - <strong>Answers learn their page numbers.</strong> Existing documents gain page information for their passages during the pass, without being re-indexed.</p>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Document types can get more specific</strong> — as each document is re-read, a type ShabuBox set automatically may be refined: a document it left untyped can be recognised as a statement from its labelled fields, and one that names a specific form can be given that form's type. <strong>A type you set yourself is never changed, and the pass never removes a type</strong> — it only replaces or fills one.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Better types, names and answers</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>A document is typed by what it says it is</strong> — ShabuBox now reads a document's own headings, title and labels first, so the large heading at the top of the page outweighs a word buried in the fine print. A document that merely mentions a form is no longer typed as that form, and a consolidated tax package is no longer mistaken for one of the forms inside it. Closing Disclosures and Loan Estimates are now recognised as their own types.</li>
-<li style="margin:3px 0;"><strong>Suggested names use the right date and the right words</strong> — a name is dated by the date the first page actually labels as the document's own, rather than the latest date anywhere in it; a statement is named by its closing date and a notice by its mailed date, while a <em>next</em> closing date is ignored. When no date is clearly supported, the name leaves the date out rather than guessing. A document's main heading can supply the "what" of its name, and suggested names are trimmed at a word boundary, never mid-word.</li>
-<li style="margin:3px 0;"><strong>No more "today" dates from nowhere</strong> — a phrase like "your service begins today" no longer dates a document to the day it happened to be read, and documents already affected are corrected.</li>
-<li style="margin:3px 0;"><strong>Answers cite the page</strong> — an answer's source now says which page the passage came from ("page 4"), when it is known.</li>
-<li style="margin:3px 0;"><strong>A company must be named in full</strong> — when a question names a company or person, ShabuBox now favours documents linked to that whole name rather than any name sharing a single word with it, and ignores filler like "Inc." and "Company" so you don't have to type them.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Files</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Move to Trash for filed documents</strong> — filed documents can now be trashed from the row menu, the bulk bar, ⌘⌫ and File Detail, not just Inbox documents. ⌘⌫ never fires while you are typing in a text field.</li>
-<li style="margin:3px 0;"><strong>Restore puts it back where it was</strong> — restoring a document you trashed returns it to its original folder when that folder still exists, and to the Inbox otherwise.</li>
-<li style="margin:3px 0;"><strong>Import a folder with its structure</strong> — drop a folder, or pick one with ⌘O, and it is imported as a folder with its subfolders intact, instead of failing. Hidden files and links are skipped, and a summary says what was added, set aside, skipped or failed.</li>
-<li style="margin:3px 0;"><strong>Show in Finder</strong> — from the row menu, the File Detail toolbar, and the split-view preview header (which also gains Share).</li>
-<li style="margin:3px 0;"><strong>Search from the header</strong> — the library's search field moves from the sidebar to the header, beside the view toggles, the same place it sits everywhere else.</li>
-<li style="margin:3px 0;"><strong>Smarter search matching</strong> — pasting a filename finds that file, and a short number like "24" matches only that number rather than every figure that starts with it.</li>
-<li style="margin:3px 0;"><strong>Work in progress is visible</strong> — a row being renamed, having titles generated, or having its resolution reduced now says so in place of its title.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Scanning</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Cancel always stops a scan</strong> — every way of starting a scan can now be cancelled, and once the paper is through the button reads "Processing…" so a scan can't be half-imported.</li>
-<li style="margin:3px 0;"><strong>A stalled scanner is caught</strong> — if the scanner stops responding mid-scan, ShabuBox stops waiting, says the scanner has stopped responding, and offers Reset.</li>
-<li style="margin:3px 0;"><strong>Scanned pages are never stranded</strong> — pages already scanned before a jam, a stall or a cancel are saved, and ShabuBox tells you so. A failing clean-up step (straightening) no longer stops a fresh scan from being saved.</li>
-<li style="margin:3px 0;"><strong>Scanner diagnostic report, anytime</strong> — <em>Save Scanner Diagnostic Bundle…</em> is now in the Help menu and Settings, not only after an error.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Settings and integrations</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Turning on iCloud no longer opens a second copy</strong> — the relaunch now waits for the old copy to quit first, and ShabuBox brings an already-running copy forward instead of opening another. Turning iCloud on now asks first and explains that it moves your library, relaunches, and can't be turned back off in the app.</li>
-<li style="margin:3px 0;"><strong>Disconnect Reminders</strong> — Settings → Integrations has a Disconnect button that turns off Reminders and removes ShabuBox's copies of your reminders (your reminders in the Reminders app are untouched). ShabuBox also disconnects on its own if you revoke its access.</li>
+<li style="margin:3px 0;"><strong>Settings says exactly what's shared</strong> — the description under <em>Settings → General → Privacy</em> now also covers how well on-device features worked: whether an answer found a source, a rough response-time range, and whether a filing suggestion was taken. Nothing in it can carry your documents, file names, folders, search text or questions.</li>
+<li style="margin:3px 0;"><strong>An idle Mac isn't counted as in use</strong> — work ShabuBox does on its own while nobody is at the Mac (filing documents iCloud delivered overnight, the scanner watcher switching itself off, a library check) no longer starts a usage session. It is reported the next time you use the app instead.</li>
+<li style="margin:3px 0;"><strong>Counted once, not twice</strong> — importing files that were still in iCloud counted the import twice, and returning to a search counted it again. Each is now counted once.</li>
+<li style="margin:3px 0;"><strong>The switch is honest</strong> — in a copy of ShabuBox that can't send statistics, the <em>Share anonymous usage statistics</em> switch is greyed out instead of looking like it does something.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">The Inbox's <em>Add Files</em> buttons did nothing.</li>
-<li style="margin:3px 0;">The sort menu could stop re-ordering the list.</li>
-<li style="margin:3px 0;">The split view's divider now comes back where you left it.</li>
-<li style="margin:3px 0;">When Apple Intelligence was temporarily unavailable, ShabuBox could say it had declined your content; it no longer blames the content.</li>
-<li style="margin:3px 0;">Text recognition could give up on a page while the Mac was still preparing it for the first time.</li>
+<li style="margin:3px 0;"><strong>Confirm Files Were Deleted stays available</strong> — when ShabuBox stops itself from removing many documents at once because they seem to have disappeared, the <em>Confirm Files Were Deleted</em> option in the Files menu no longer vanishes after a library check that hit an error part-way.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">The background re-read starts on first launch and needs no action. Leave the Mac awake and plugged in for a large library; it resumes wherever it stopped.</li>
-<li style="margin:3px 0;">Do not go back to 2.5.0 after 2.6.0 has opened your library. This release changes the library's format, and 2.5.0 will recognise the newer library, explain that it was last used by a newer version, and quit without opening it rather than risk damaging it. Reinstall 2.6.0 to carry on.</li>
+<li style="margin:3px 0;">No re-read, no library changes and nothing to do — this update installs and opens like any other.</li>
+<li style="margin:3px 0;">You can turn usage statistics off at any time in <em>Settings → General → Privacy</em>; turning them off stops collection immediately and discards anything not yet sent.</li>
 </ul>
 </div>
 ]]></description>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.6.0/ShabuBox-2.6.0.zip" length="20519432" type="application/octet-stream" sparkle:edSignature="ae/GuAJn9xWcB9KAC73CPvJaqtZNAPLg6QN//4hGXeRA+ZDY9ypES6leQeYiSxfo6RZuas3587T+T//ikL6vCQ=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.6.1/ShabuBox-2.6.1.zip" length="20555331" type="application/octet-stream" sparkle:edSignature="DD7NS6YQwkv9MCKDeZuTj2s4TA2DNlrllCi0Wya57o9mzENNX4RpoX0TTa6R+KCEHNBs7+ekAPiY8hXiX3maDw=="/>
         </item>
     </channel>
 </rss>
