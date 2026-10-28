@@ -3,34 +3,28 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.6.1</title>
-            <pubDate>Tue, 06 Oct 2026 11:52:04 -0400</pubDate>
-            <sparkle:version>110</sparkle:version>
-            <sparkle:shortVersionString>2.6.1</sparkle:shortVersionString>
+            <title>2.6.2</title>
+            <pubDate>Wed, 28 Oct 2026 18:12:19 -0400</pubDate>
+            <sparkle:version>111</sparkle:version>
+            <sparkle:shortVersionString>2.6.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
-<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.6.1</h2>
-<p style="margin:6px 0;">A small update about the anonymous usage statistics ShabuBox can send — what they include, when they're sent, and how accurately they count — plus one fix to the library's safety check. Your documents, file names and anything you type are still never sent.</p>
-<h3 style="font-size:13px; margin:14px 0 4px;">Usage statistics</h3>
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.6.2</h2>
+<p style="margin:6px 0;">A small update that makes scanning more dependable on printers that also scan, especially ones that have both a document feeder and a glass flatbed.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Scanning</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Settings says exactly what's shared</strong> — the description under <em>Settings → General → Privacy</em> now also covers how well on-device features worked: whether an answer found a source, a rough response-time range, and whether a filing suggestion was taken. Nothing in it can carry your documents, file names, folders, search text or questions.</li>
-<li style="margin:3px 0;"><strong>An idle Mac isn't counted as in use</strong> — work ShabuBox does on its own while nobody is at the Mac (filing documents iCloud delivered overnight, the scanner watcher switching itself off, a library check) no longer starts a usage session. It is reported the next time you use the app instead.</li>
-<li style="margin:3px 0;"><strong>Counted once, not twice</strong> — importing files that were still in iCloud counted the import twice, and returning to a search counted it again. Each is now counted once.</li>
-<li style="margin:3px 0;"><strong>The switch is honest</strong> — in a copy of ShabuBox that can't send statistics, the <em>Share anonymous usage statistics</em> switch is greyed out instead of looking like it does something.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Confirm Files Were Deleted stays available</strong> — when ShabuBox stops itself from removing many documents at once because they seem to have disappeared, the <em>Confirm Files Were Deleted</em> option in the Files menu no longer vanishes after a library check that hit an error part-way.</li>
+<li style="margin:3px 0;"><strong>Scans finish when the pages are in</strong> — some scanners never tell the Mac that a scan has finished, so ShabuBox kept waiting for up to three minutes. ShabuBox now finishes as soon as your pages have arrived and the feeder is empty, and keeps any pages the scanner saved without reporting them.</li>
+<li style="margin:3px 0;"><strong>The glass works when the feeder is empty</strong> — on a scanner with both a feeder and a flatbed, starting a scan with a page on the glass and nothing in the feeder used to end with "no pages". ShabuBox now scans the glass instead.</li>
+<li style="margin:3px 0;"><strong>Unplugging ends the scan right away</strong> — if the scanner is switched off or disconnected mid-scan, ShabuBox stops waiting immediately and keeps any pages that already arrived.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
 <ul style="margin:4px 0; padding-left:18px;">
 <li style="margin:3px 0;">No re-read, no library changes and nothing to do — this update installs and opens like any other.</li>
-<li style="margin:3px 0;">You can turn usage statistics off at any time in <em>Settings → General → Privacy</em>; turning them off stops collection immediately and discards anything not yet sent.</li>
 </ul>
 </div>
 ]]></description>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.6.1/ShabuBox-2.6.1.zip" length="20555331" type="application/octet-stream" sparkle:edSignature="DD7NS6YQwkv9MCKDeZuTj2s4TA2DNlrllCi0Wya57o9mzENNX4RpoX0TTa6R+KCEHNBs7+ekAPiY8hXiX3maDw=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.6.2/ShabuBox-2.6.2.zip" length="20575360" type="application/octet-stream" sparkle:edSignature="oSeU2eXvbNp4KN2G8OWNlHoWL+8sFL6nRiQCkSUzs/fbz+W4toUgV+bu12YA15HXMYDRm4WHQzLe0XwFwwdCDQ=="/>
         </item>
     </channel>
 </rss>
