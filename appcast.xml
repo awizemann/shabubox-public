@@ -3,61 +3,46 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.7.0</title>
-            <pubDate>Mon, 02 Nov 2026 16:41:25 -0500</pubDate>
-            <sparkle:version>112</sparkle:version>
-            <sparkle:shortVersionString>2.7.0</sparkle:shortVersionString>
+            <title>2.8.0</title>
+            <pubDate>Fri, 13 Nov 2026 19:29:57 -0500</pubDate>
+            <sparkle:version>113</sparkle:version>
+            <sparkle:shortVersionString>2.8.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
-<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.7</h2>
-<p style="margin:6px 0;">ShabuBox now reads Word documents and spreadsheets, not just PDFs and images. This update also makes notes more dependable, gives you more control over what appears in your library, and adds several everyday improvements to working with files.</p>
-<h3 style="font-size:13px; margin:14px 0 4px;">Word documents and spreadsheets</h3>
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.8</h2>
+<p style="margin:6px 0;">ShabuBox now works properly on more than one Mac. If you open the same iCloud library on two Macs, they share the work instead of repeating it, and your changes on one show up on the other.</p>
+<h3 style="font-size:13px; margin:14px 0 4px;">Using ShabuBox on more than one Mac</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Your documents can now be searched and asked about</strong> — ShabuBox reads the text of Word files (.docx, .doc), RTF, plain text and Markdown, plus spreadsheets (.xlsx, .xls, .csv, .tsv), all on your Mac.</li>
-<li style="margin:3px 0;"><strong>Preview them in place</strong> — Word, text and spreadsheet files, including Pages and Numbers, now open in a built-in preview.</li>
-<li style="margin:3px 0;"><strong>Filter by type</strong> — new Docs and Sheets filters sit beside PDF and Images in Files.</li>
-<li style="margin:3px 0;"><strong>TIFF and HEIF images get read too</strong> — these were being skipped, so their text couldn't be found. They are now treated like any other image.</li>
-<li style="margin:3px 0;">Pages and Numbers files preview, but their text can't be read yet.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>A note's first heading is its title</strong> — the title follows the heading when you close the note, switch notes or quit, and links to the note follow it. Editing the title in the header updates the heading.</li>
-<li style="margin:3px 0;"><strong>One Note font setting</strong> — choose it in <em>Settings → General → Note font</em>. Notes stay plain Markdown, so the font is never stored in them. The Font menu is gone from the right-click menu.</li>
-<li style="margin:3px 0;"><strong>Your typing is safer</strong> — a failed save stays unsaved and retries instead of being lost, and a note that can't be read stays locked rather than opening empty.</li>
+<li style="margin:3px 0;"><strong>A file is read once</strong> — the Mac that imports a document reads, names and files it. Your other Macs wait for its results instead of reading the same file again.</li>
+<li style="margin:3px 0;"><strong>Files nobody imported are handled by one Mac</strong> — a file that lands in your library some other way, such as a Finder copy, is read and filed by just one of your Macs, so it's never filed twice or into two different folders.</li>
+<li style="margin:3px 0;"><strong>Your Inbox looks the same everywhere</strong> — every Mac sorts by the same import time, so the order matches.</li>
+<li style="margin:3px 0;"><strong>Tags, stars, notes and collections follow you</strong> — a change on one Mac appears on the others, without restarting the app.</li>
+<li style="margin:3px 0;"><strong>Trash follows too</strong> — a file you move to Trash on one Mac is trashed on the others.</li>
+<li style="margin:3px 0;"><strong>Note edits are never lost</strong> — if the same note is changed on two Macs at once, ShabuBox keeps both versions instead of overwriting one.</li>
+<li style="margin:3px 0;"><strong>Files still downloading from iCloud are listed</strong> — a second Mac shows your whole library right away, even before every file has downloaded.</li>
+<li style="margin:3px 0;"><strong>See iCloud catching up</strong> — the sidebar shows progress while a Mac catches up with iCloud. <em>Folder Health</em> shows a summary of what has synced.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Working with files</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Cmd-click and Shift-click select rows</strong> — they used to open the file. This works in the list, grid, split and table views.</li>
-<li style="margin:3px 0;"><strong>Add many files to a collection</strong> — the bulk bar has a new Collection menu that you can search, and you can create a new collection from it. The bar also adapts to narrow windows.</li>
-<li style="margin:3px 0;"><strong>Rename folders</strong> — right-click a folder in the Files tree.</li>
-<li style="margin:3px 0;"><strong>Resizable columns</strong> — drag the sidebar, folder tree, notes list and other side columns; ShabuBox remembers their widths. Long names now appear in full when you hover over them.</li>
-<li style="margin:3px 0;"><strong>Drop files anywhere</strong> — files can now be dropped over an open preview, or onto a folder to import them there, and a banner says where they went.</li>
-<li style="margin:3px 0;"><strong>Show Original for duplicates</strong> — a duplicate now links to the file it matches. ShabuBox also warns you before you permanently delete a copy holding tags, notes or other work the original doesn't have.</li>
-<li style="margin:3px 0;"><strong>A notice when you trash a file</strong> — it includes a Show link that takes you to the file in Trashed.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Entities and addresses</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Hide entities in bulk, and bring them back</strong> — hidden entities now have their own list, and un-hiding restores exactly the documents they were linked to.</li>
-<li style="margin:3px 0;"><strong>Assign documents to an organization</strong> — you can add, move or remove them yourself, and your choices are kept.</li>
-<li style="margin:3px 0;"><strong>Hide addresses</strong> — hide one or several, or turn off the Addresses and Map sections altogether in Settings.</li>
+<li style="margin:3px 0;"><strong>Undo for adding to a collection</strong> — adding many files to a collection asks first, then offers Undo.</li>
+<li style="margin:3px 0;"><strong>Smart collections no longer appear in Add to Collection menus</strong>, since files can't be added to them by hand.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Failed actions now tell you</strong> — trashing, deleting, renaming, reminders and custom fields used to be able to fail silently. They now show a banner.</li>
-<li style="margin:3px 0;"><strong>Bulk Move to Trash</strong> — confirming it now works, and using the row menu inside a selection acts on the whole selection.</li>
-<li style="margin:3px 0;"><strong>Files added during processing</strong> — files imported while ShabuBox was busy could stay unprocessed until the next launch.</li>
-<li style="margin:3px 0;"><strong>Deleted, renamed and merged tags</strong> could come back after a rebuild. They now stay as you left them.</li>
+<li style="margin:3px 0;"><strong>Duplicate rows</strong> — a file could appear twice in the list, and a second Mac could crash while importing. Both are fixed, and any duplicates already in your library are merged.</li>
+<li style="margin:3px 0;"><strong>Duplicate people and organizations</strong> created on two Macs are merged into one.</li>
+<li style="margin:3px 0;"><strong>Notes with unusual characters</strong> that could never be read are now indexed.</li>
 </ul>
 <h3 style="font-size:13px; margin:14px 0 4px;">Notes on this update</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">After updating, ShabuBox reads the Word files and spreadsheets already in your library once, in the background, and re-sorts your TIFF and HEIF files. Nothing else in your library changes, and your files are never altered.</li>
-<li style="margin:3px 0;">Once your library has been opened by 2.7, older versions of ShabuBox can't open it.</li>
-<li style="margin:3px 0;"><em>Help → ShabuBox User Guide</em> opens the new online guide.</li>
+<li style="margin:3px 0;">Syncing between Macs is always on now, so its setting is gone.</li>
+<li style="margin:3px 0;">After updating, a newly started Mac waits about 30 minutes before it begins auto-filing files that appear in your library from elsewhere. Files you drop in yourself are handled straight away.</li>
+<li style="margin:3px 0;">Update every Mac that shares your library. Once your library has been opened by 2.8, older versions of ShabuBox can't open it.</li>
 </ul>
 </div>
 ]]></description>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.7.0/ShabuBox-2.7.0.zip" length="21092169" type="application/octet-stream" sparkle:edSignature="5n2iuR1U3zlc8tL5nRU/3ANCGzB8HTMJJc2dfTf/HqEenWQbNB+wWAsAWgjqTU+IZo8PdmpvdmiQF4RTR+POBQ=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.8.0/ShabuBox-2.8.0.zip" length="21357226" type="application/octet-stream" sparkle:edSignature="6ggRXKktknyBDnB+/xTVDHBKcrsaX9hC8pFAcsUenfecSNfmmR+G1ibTunNg/pg7ujVrqgNI0udvGL3PKYjPAw=="/>
         </item>
     </channel>
 </rss>
