@@ -3,46 +3,36 @@
     <channel>
         <title>ShabuBox</title>
         <item>
-            <title>2.8.0</title>
-            <pubDate>Fri, 13 Nov 2026 19:29:57 -0500</pubDate>
-            <sparkle:version>113</sparkle:version>
-            <sparkle:shortVersionString>2.8.0</sparkle:shortVersionString>
+            <title>2.8.1</title>
+            <pubDate>Fri, 20 Nov 2026 08:31:56 -0500</pubDate>
+            <sparkle:version>114</sparkle:version>
+            <sparkle:shortVersionString>2.8.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
             <description><![CDATA[<div style="font: 13px -apple-system, sans-serif; line-height: 1.45;">
-<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.8</h2>
-<p style="margin:6px 0;">ShabuBox now works properly on more than one Mac. If you open the same iCloud library on two Macs, they share the work instead of repeating it, and your changes on one show up on the other.</p>
-<h3 style="font-size:13px; margin:14px 0 4px;">Using ShabuBox on more than one Mac</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>A file is read once</strong> — the Mac that imports a document reads, names and files it. Your other Macs wait for its results instead of reading the same file again.</li>
-<li style="margin:3px 0;"><strong>Files nobody imported are handled by one Mac</strong> — a file that lands in your library some other way, such as a Finder copy, is read and filed by just one of your Macs, so it's never filed twice or into two different folders.</li>
-<li style="margin:3px 0;"><strong>Your Inbox looks the same everywhere</strong> — every Mac sorts by the same import time, so the order matches.</li>
-<li style="margin:3px 0;"><strong>Tags, stars, notes and collections follow you</strong> — a change on one Mac appears on the others, without restarting the app.</li>
-<li style="margin:3px 0;"><strong>Trash follows too</strong> — a file you move to Trash on one Mac is trashed on the others.</li>
-<li style="margin:3px 0;"><strong>Note edits are never lost</strong> — if the same note is changed on two Macs at once, ShabuBox keeps both versions instead of overwriting one.</li>
-<li style="margin:3px 0;"><strong>Files still downloading from iCloud are listed</strong> — a second Mac shows your whole library right away, even before every file has downloaded.</li>
-<li style="margin:3px 0;"><strong>See iCloud catching up</strong> — the sidebar shows progress while a Mac catches up with iCloud. <em>Folder Health</em> shows a summary of what has synced.</li>
-</ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Working with files</h3>
-<ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Undo for adding to a collection</strong> — adding many files to a collection asks first, then offers Undo.</li>
-<li style="margin:3px 0;"><strong>Smart collections no longer appear in Add to Collection menus</strong>, since files can't be added to them by hand.</li>
-</ul>
+<h2 style="font-size:15px; margin:0 0 6px;">ShabuBox 2.8.1</h2>
+<p style="margin:6px 0;">A small update. It fixes a crash on launch caused by some PDFs, makes sure one problem document can never crash the app over and over, and gives the local chat model its own place in Settings so it works properly without Apple Intelligence.</p>
 <h3 style="font-size:13px; margin:14px 0 4px;">Fixed</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;"><strong>Duplicate rows</strong> — a file could appear twice in the list, and a second Mac could crash while importing. Both are fixed, and any duplicates already in your library are merged.</li>
-<li style="margin:3px 0;"><strong>Duplicate people and organizations</strong> created on two Macs are merged into one.</li>
-<li style="margin:3px 0;"><strong>Notes with unusual characters</strong> that could never be read are now indexed.</li>
+<li style="margin:3px 0;"><strong>Crash a few seconds after launch</strong> — some PDFs with damaged internal formatting made ShabuBox crash while reading their headings. Because the document never finished being read, the app crashed again on every launch. These PDFs are now read safely, and their text is still indexed.</li>
 </ul>
-<h3 style="font-size:13px; margin:14px 0 4px;">Notes on this update</h3>
+<h3 style="font-size:13px; margin:14px 0 4px;">Safer reading</h3>
 <ul style="margin:4px 0; padding-left:18px;">
-<li style="margin:3px 0;">Syncing between Macs is always on now, so its setting is gone.</li>
-<li style="margin:3px 0;">After updating, a newly started Mac waits about 30 minutes before it begins auto-filing files that appear in your library from elsewhere. Files you drop in yourself are handled straight away.</li>
-<li style="margin:3px 0;">Update every Mac that shares your library. Once your library has been opened by 2.8, older versions of ShabuBox can't open it.</li>
+<li style="margin:3px 0;"><strong>One document can't keep crashing the app</strong> — if a document ever crashes ShabuBox while it's being read, and does it again on the next launch, ShabuBox stops reading it and treats it as unreadable. The rest of your library carries on as normal. The next update tries that document again, in case it includes a fix.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Chat without Apple Intelligence</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;"><strong>The local model shows in Settings</strong> — <em>Settings → Chat</em> now shows the status of the model that runs on your Mac, not just Apple Intelligence. What it shows follows your <em>Answer with</em> choice.</li>
+<li style="margin:3px 0;"><strong>Download, test and remove it</strong> — you can download the local model from Settings, check it works with <em>Test chat model</em>, and remove downloaded models to free up disk space.</li>
+<li style="margin:3px 0;"><strong>Clearer wording</strong> — Apple Intelligence status is now labelled "Apple Intelligence", so it isn't confused with the local model.</li>
+</ul>
+<h3 style="font-size:13px; margin:14px 0 4px;">Notes</h3>
+<ul style="margin:4px 0; padding-left:18px;">
+<li style="margin:3px 0;">Nothing to do after updating. Your library isn't re-read or changed.</li>
 </ul>
 </div>
 ]]></description>
-            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.8.0/ShabuBox-2.8.0.zip" length="21357226" type="application/octet-stream" sparkle:edSignature="6ggRXKktknyBDnB+/xTVDHBKcrsaX9hC8pFAcsUenfecSNfmmR+G1ibTunNg/pg7ujVrqgNI0udvGL3PKYjPAw=="/>
+            <enclosure url="https://github.com/awizemann/shabubox-public/releases/download/v2.8.1/ShabuBox-2.8.1.zip" length="21402785" type="application/octet-stream" sparkle:edSignature="E4ylBTaFKaQY3DQoY0UhOmqeq5PhIdKGIVIVIYXa4DTcyh6bl6CV/cS6P7tNv18Z+GuinVQVcCRI24c6wPr2Dw=="/>
         </item>
     </channel>
 </rss>
